@@ -1,0 +1,79 @@
+.icon img{
+    width: 20px;
+}
+
+main{
+    border: black 2px solid;
+    border-radius: 20px;
+    width: 36em;
+    height: 350px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* flex-wrap: nowrap; */
+    /* justify-content: space-evenly; */
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.Signin,.Signup{
+    text-align: center;
+
+}
+.Signin,.Welcome{
+    display: none;
+}
+
+.form_signin{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form_signup{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Welcome div{
+    text-align: center;
+    padding: 20px;
+}
+
+.Welcome,.return{
+    background-color: pink;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+
+button{
+    border-radius: 30px;
+    width: 100px;
+    background-color: rgba(255,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+button:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.form-container {
+    width: 200%; /* Twice the main width */
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.Signin, .Signup, .Welcome, .return {
+    width: 32%; /* Take up half the form-container */
+    padding: 20px;
+}
