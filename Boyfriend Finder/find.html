@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swipe Dating Site</title>
+  <link rel="stylesheet" href="CSS/find.css">
+</head>
+<body>
+  <!-- <div class="instructions">
+    <p><strong>PC:</strong> Click and drag left or right to swipe</p>
+    <p><strong>Phone:</strong> Slide left (not interested) or right (interested)</p>
+    <p>Or use the arrows below to choose</p>
+  </div> -->
+  <video autoplay muted loop id="myVideo">
+    <source src="video/3129595-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+  <nav class="content">
+      <div class="links">
+          <!-- <a href="home.html"><img src="images/house.png" alt="Home"></a> -->
+          <!-- <a href="">About</a> -->
+          <!-- <a href="">Review</a> -->
+      </div>
+      <div class="logo">
+          <a href="home.html"><img src="images/share_10974523.png" alt=""></a>
+      </div>
+      <div class="links">
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+      </div>
+  
+    <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
+  </nav>
+
+  <div class="container" id="cardContainer"></div>
+
+  <aside id="profileDetails"></aside>
+
+  <!-- Button to show matches -->
+<button onclick="showMatches()">Show Matches</button>
+
+<!-- Matches display section -->
+<section id="matches" style="margin-top: 20px;"></section>
+
+
+<!-- Chat Modal -->
+<div id="chatModal" class="chat-modal">
+  <div class="chat-box">
+    <div class="chat-header">
+      <span id="chatWith">Chat with ...</span>
+      <button onclick="closeChat()">X</button>
+    </div>
+    <div id="chatMessages" class="chat-messages"></div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>
+
+  <div class="buttons">
+    <button class="arrow-button" onclick="swipe('left')"><img src="images/dislike.png" alt="booo"></button>
+    <button class="arrow-button" onclick="swipe('right')"><img src="images/thumbs-up.png" alt="wow"></button>
+    <br>
+  </div>
+<br>
+
+ <script src="JS/find.js"></script>
+</body>
+</html>
